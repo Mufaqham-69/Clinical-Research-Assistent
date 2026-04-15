@@ -3,10 +3,10 @@ from pydantic import BaseModel
 from typing import List, Optional
 import uvicorn
 import os
-rom fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-f
+
 # Add this block:
 app.add_middleware(
     CORSMiddleware,
