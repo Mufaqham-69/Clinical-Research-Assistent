@@ -17,7 +17,7 @@ function App() {
         setLoading(true);
         setError('');
         try {
-            const response = await fetch('/match', {
+            const response = await fetch('https://clinical-research-assistent-1.onrender.com/match', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
