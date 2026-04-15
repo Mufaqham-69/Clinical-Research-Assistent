@@ -3,7 +3,18 @@ from pydantic import BaseModel
 from typing import List, Optional
 import uvicorn
 import os
+rom fastapi.middleware.cors import CORSMiddleware
 
+app = FastAPI()
+f
+# Add this block:
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # For production, replace "*" with your Frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app = FastAPI(title="AI Clinical Trial Matcher")
 
 class PatientData(BaseModel):
