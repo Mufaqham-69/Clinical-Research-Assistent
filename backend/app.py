@@ -15,7 +15,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app = FastAPI(title="AI Clinical Trial Matcher")
+# app = FastAPI(title="AI Clinical Trial Matcher")
 
 class PatientData(BaseModel):
     age: int
